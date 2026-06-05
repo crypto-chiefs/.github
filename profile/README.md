@@ -115,6 +115,7 @@ Crypto Chief SDKs help developers integrate Crypto Chief APIs faster using nativ
 | Language | Repository | Status |
 | --- | --- | --- |
 | Go | [cryptochief-crypto-processing-go](https://github.com/crypto-chiefs/cryptochief-crypto-processing-go) | Available |
+| JavaScript / TypeScript | [cryptochief-crypto-processing-node](https://github.com/crypto-chiefs/cryptochief-crypto-processing-node) | Available |
 
 ### Planned SDKs
 
@@ -122,7 +123,6 @@ More official SDKs are planned.
 
 | Language | Status |
 | --- | --- |
-| JavaScript / TypeScript | Planned |
 | PHP | Planned |
 | Python | Planned |
 | Java | Planned |
@@ -149,6 +149,31 @@ The Go SDK covers crypto payment processing across 25+ chains — PayIn invoices
 Typical use cases:
 
 - accepting crypto payments and building a crypto payment gateway in Go
+- automating merchant and stablecoin payouts
+- verifying crypto payment webhooks
+- integrating blockchain payments into SaaS, fintech, and Web3 backends
+
+---
+
+## Node.js / TypeScript SDK for Crypto Processing
+
+The official Node.js / TypeScript SDK for the Crypto Chief Processing API helps backend developers integrate crypto payment processing into Node.js applications.
+
+- Repository: https://github.com/crypto-chiefs/cryptochief-crypto-processing-node
+- SDK guide & docs: https://docs-sdk.crypto-chief.com/processing/js
+- Package (npm): https://www.npmjs.com/package/@cryptochiefs/cryptochief-crypto-processing-node
+
+Install:
+
+```bash
+npm install @cryptochiefs/cryptochief-crypto-processing-node
+```
+
+The Node.js SDK covers crypto payment processing across 25+ chains — PayIn invoices, payouts and mass payouts, static deposits, wallet management, transaction signing, webhook verification, and stablecoin (USDT / USDC) flows on Ethereum, Tron, TON, Solana, and Bitcoin. Written in TypeScript with full type definitions, it works in plain JavaScript too and ships both ESM and CommonJS builds (Node.js 18+).
+
+Typical use cases:
+
+- accepting crypto payments and building a crypto payment gateway in Node.js / TypeScript
 - automating merchant and stablecoin payouts
 - verifying crypto payment webhooks
 - integrating blockchain payments into SaaS, fintech, and Web3 backends
@@ -209,3 +234,5 @@ Crypto Chief is especially useful for products built on stablecoins such as USDT
 - Documentation: https://docs.crypto-chief.com/
 - Go SDK: https://github.com/crypto-chiefs/cryptochief-crypto-processing-go
 - Go SDK docs: https://docs-sdk.crypto-chief.com/processing/go
+- Node.js / TypeScript SDK: https://github.com/crypto-chiefs/cryptochief-crypto-processing-node
+- Node.js / TypeScript SDK docs: https://docs-sdk.crypto-chief.com/processing/js
