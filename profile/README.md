@@ -116,6 +116,7 @@ Crypto Chief SDKs help developers integrate Crypto Chief APIs faster using nativ
 | --- | --- | --- |
 | Go | [cryptochief-crypto-processing-go](https://github.com/crypto-chiefs/cryptochief-crypto-processing-go) | Available |
 | JavaScript / TypeScript | [cryptochief-crypto-processing-node](https://github.com/crypto-chiefs/cryptochief-crypto-processing-node) | Available |
+| Python | [cryptochief-crypto-processing-python](https://github.com/crypto-chiefs/cryptochief-crypto-processing-python) | Available |
 
 ### Planned SDKs
 
@@ -124,7 +125,6 @@ More official SDKs are planned.
 | Language | Status |
 | --- | --- |
 | PHP | Planned |
-| Python | Planned |
 | Java | Planned |
 | Kotlin | Planned |
 | C# | Planned |
@@ -174,6 +174,31 @@ The Node.js SDK covers crypto payment processing across 25+ chains — PayIn inv
 Typical use cases:
 
 - accepting crypto payments and building a crypto payment gateway in Node.js / TypeScript
+- automating merchant and stablecoin payouts
+- verifying crypto payment webhooks
+- integrating blockchain payments into SaaS, fintech, and Web3 backends
+
+---
+
+## Python SDK for Crypto Processing
+
+The official async Python SDK for the Crypto Chief Processing API helps backend developers integrate crypto payment processing into Python applications.
+
+- Repository: https://github.com/crypto-chiefs/cryptochief-crypto-processing-python
+- SDK guide & docs: https://docs-sdk.crypto-chief.com/processing/python
+- Package (PyPI): https://pypi.org/project/cryptochief-crypto-processing-python/
+
+Install:
+
+```bash
+pip install cryptochief-crypto-processing-python
+```
+
+The Python SDK covers crypto payment processing across 25+ chains — PayIn invoices, payouts and mass payouts, static deposits, wallet management, transaction signing, webhook verification, and stablecoin (USDT / USDC) flows on Ethereum, Tron, TON, Solana, and Bitcoin. Async-first (built on asyncio and httpx) with fully typed dataclass requests and responses (Python 3.10+).
+
+Typical use cases:
+
+- accepting crypto payments and building a crypto payment gateway in Python
 - automating merchant and stablecoin payouts
 - verifying crypto payment webhooks
 - integrating blockchain payments into SaaS, fintech, and Web3 backends
@@ -236,3 +261,5 @@ Crypto Chief is especially useful for products built on stablecoins such as USDT
 - Go SDK docs: https://docs-sdk.crypto-chief.com/processing/go
 - Node.js / TypeScript SDK: https://github.com/crypto-chiefs/cryptochief-crypto-processing-node
 - Node.js / TypeScript SDK docs: https://docs-sdk.crypto-chief.com/processing/js
+- Python SDK: https://github.com/crypto-chiefs/cryptochief-crypto-processing-python
+- Python SDK docs: https://docs-sdk.crypto-chief.com/processing/python
