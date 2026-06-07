@@ -117,6 +117,7 @@ Crypto Chief SDKs help developers integrate Crypto Chief APIs faster using nativ
 | Go | [cryptochief-crypto-processing-go](https://github.com/crypto-chiefs/cryptochief-crypto-processing-go) | Available |
 | JavaScript / TypeScript | [cryptochief-crypto-processing-node](https://github.com/crypto-chiefs/cryptochief-crypto-processing-node) | Available |
 | Python | [cryptochief-crypto-processing-python](https://github.com/crypto-chiefs/cryptochief-crypto-processing-python) | Available |
+| PHP | [cryptochief-crypto-processing-php](https://github.com/crypto-chiefs/cryptochief-crypto-processing-php) | Available |
 
 ### Planned SDKs
 
@@ -124,7 +125,6 @@ More official SDKs are planned.
 
 | Language | Status |
 | --- | --- |
-| PHP | Planned |
 | Java | Planned |
 | Kotlin | Planned |
 | C# | Planned |
@@ -205,6 +205,31 @@ Typical use cases:
 
 ---
 
+## PHP SDK for Crypto Processing
+
+The official PHP SDK for the Crypto Chief Processing API helps backend developers integrate crypto payment processing into PHP applications, including Laravel and Symfony projects.
+
+- Repository: https://github.com/crypto-chiefs/cryptochief-crypto-processing-php
+- SDK guide & docs: https://docs-sdk.crypto-chief.com/processing/php
+- Package (Packagist): https://packagist.org/packages/crypto-chiefs/cryptochief-crypto-processing-php
+
+Install:
+
+```bash
+composer require crypto-chiefs/cryptochief-crypto-processing-php
+```
+
+The PHP SDK covers crypto payment processing across 25+ chains — PayIn invoices, payouts and mass payouts, static deposits, wallet management, transaction signing, webhook verification, and stablecoin (USDT / USDC) flows on Ethereum, Tron, TON, Solana, and Bitcoin. Built for PHP 8.1+ with strict types, readonly DTOs, backed enums, and a PSR-18 HTTP client (Guzzle by default), so it drops straight into Laravel, Symfony, Slim, and any modern PHP backend.
+
+Typical use cases:
+
+- accepting crypto payments and building a crypto payment gateway in PHP
+- automating merchant and stablecoin payouts from Laravel or Symfony backends
+- verifying crypto payment webhooks
+- integrating blockchain payments into SaaS, fintech, e-commerce, and Web3 backends
+
+---
+
 ## Who uses Crypto Chief?
 
 Crypto Chief is built for engineering teams working on:
@@ -263,3 +288,5 @@ Crypto Chief is especially useful for products built on stablecoins such as USDT
 - Node.js / TypeScript SDK docs: https://docs-sdk.crypto-chief.com/processing/js
 - Python SDK: https://github.com/crypto-chiefs/cryptochief-crypto-processing-python
 - Python SDK docs: https://docs-sdk.crypto-chief.com/processing/python
+- PHP SDK: https://github.com/crypto-chiefs/cryptochief-crypto-processing-php
+- PHP SDK docs: https://docs-sdk.crypto-chief.com/processing/php
