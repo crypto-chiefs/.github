@@ -118,16 +118,9 @@ Crypto Chief SDKs help developers integrate Crypto Chief APIs faster using nativ
 | JavaScript / TypeScript | [cryptochief-crypto-processing-node](https://github.com/crypto-chiefs/cryptochief-crypto-processing-node) | Available |
 | Python | [cryptochief-crypto-processing-python](https://github.com/crypto-chiefs/cryptochief-crypto-processing-python) | Available |
 | PHP | [cryptochief-crypto-processing-php](https://github.com/crypto-chiefs/cryptochief-crypto-processing-php) | Available |
-
-### Planned SDKs
-
-More official SDKs are planned.
-
-| Language | Status |
-| --- | --- |
-| Java | Planned |
-| Kotlin | Planned |
-| C# | Planned |
+| Kotlin / JVM | [cryptochief-crypto-processing-kotlin](https://github.com/crypto-chiefs/cryptochief-crypto-processing-kotlin) | Available |
+| .NET / C# | [cryptochief-crypto-processing-dotnet](https://github.com/crypto-chiefs/cryptochief-crypto-processing-dotnet) | Available |
+| Java | [cryptochief-crypto-processing-java](https://github.com/crypto-chiefs/cryptochief-crypto-processing-java) | Available |
 
 ---
 
@@ -230,6 +223,87 @@ Typical use cases:
 
 ---
 
+## Kotlin / JVM SDK for Crypto Processing
+
+The official Kotlin / JVM SDK for the Crypto Chief Processing API helps backend developers integrate crypto payment processing into Kotlin and Java services, Spring Boot apps, and Android backends.
+
+- Repository: https://github.com/crypto-chiefs/cryptochief-crypto-processing-kotlin
+- SDK guide & docs: https://docs-sdk.crypto-chief.com/processing/kotlin
+- Package (Maven Central): https://central.sonatype.com/artifact/com.crypto-chief/cryptochief-crypto-processing-kotlin
+
+Install (Gradle Kotlin DSL):
+
+```kotlin
+dependencies {
+    implementation("com.crypto-chief:cryptochief-crypto-processing-kotlin:0.1.0")
+}
+```
+
+The Kotlin SDK covers crypto payment processing across 25+ chains — PayIn invoices, payouts and mass payouts, static deposits, wallet management, transaction signing, webhook verification, and stablecoin (USDT / USDC) flows on Ethereum, Tron, TON, Solana, and Bitcoin. Coroutines-first (every API method is a `suspend fun`), built on OkHttp and kotlinx.serialization, with a self-contained Keccak / BoC / Borsh layer — zero BouncyCastle or external blockchain libraries. JVM 11+.
+
+Typical use cases:
+
+- accepting crypto payments and building a crypto payment gateway in Kotlin
+- automating merchant and stablecoin payouts from Spring Boot, Ktor, or Android backends
+- verifying crypto payment webhooks
+- integrating blockchain payments into SaaS, fintech, and Web3 backends on the JVM
+
+---
+
+## .NET / C# SDK for Crypto Processing
+
+The official .NET / C# SDK for the Crypto Chief Processing API helps backend developers integrate crypto payment processing into ASP.NET Core, Azure Functions, and other .NET applications.
+
+- Repository: https://github.com/crypto-chiefs/cryptochief-crypto-processing-dotnet
+- SDK guide & docs: https://docs-sdk.crypto-chief.com/processing/dotnet
+- Package (NuGet): https://www.nuget.org/packages/CryptoChief.Processing
+
+Install:
+
+```bash
+dotnet add package CryptoChief.Processing
+```
+
+The .NET SDK covers crypto payment processing across 25+ chains — PayIn invoices, payouts and mass payouts, static deposits, wallet management, transaction signing, webhook verification, and stablecoin (USDT / USDC) flows on Ethereum, Tron, TON, Solana, and Bitcoin. Built for .NET 6 and .NET 8 with full async/await, `System.Text.Json` source-generated DTOs, `IHttpClientFactory` integration, and `AddCryptoChief()` DI extensions for Microsoft.Extensions.DependencyInjection.
+
+Typical use cases:
+
+- accepting crypto payments and building a crypto payment gateway in C#
+- automating merchant and stablecoin payouts from ASP.NET Core or Azure Functions
+- verifying crypto payment webhooks
+- integrating blockchain payments into SaaS, fintech, and Web3 backends on .NET
+
+---
+
+## Java SDK for Crypto Processing
+
+The official Java SDK for the Crypto Chief Processing API helps backend developers integrate crypto payment processing into Java applications — Spring Boot, Quarkus, Micronaut, and any modern JVM stack.
+
+- Repository: https://github.com/crypto-chiefs/cryptochief-crypto-processing-java
+- SDK guide & docs: https://docs-sdk.crypto-chief.com/processing/java
+- Package (Maven Central): https://central.sonatype.com/artifact/com.crypto-chief/cryptochief-crypto-processing-java
+
+Install (Maven):
+
+```xml
+<dependency>
+  <groupId>com.crypto-chief</groupId>
+  <artifactId>cryptochief-crypto-processing-java</artifactId>
+  <version>0.1.0</version>
+</dependency>
+```
+
+The Java SDK covers crypto payment processing across 25+ chains — PayIn invoices, payouts and mass payouts, static deposits, wallet management, transaction signing, webhook verification, and stablecoin (USDT / USDC) flows on Ethereum, Tron, TON, Solana, and Bitcoin. Pure Java 17+ with records for all DTOs, OkHttp transport, Jackson canonical JSON, and a self-contained Keccak / BoC / Borsh layer — no Kotlin runtime, no BouncyCastle, no reactive bridges.
+
+Typical use cases:
+
+- accepting crypto payments and building a crypto payment gateway in Java
+- automating merchant and stablecoin payouts from Spring Boot, Quarkus, or Micronaut backends
+- verifying crypto payment webhooks
+- integrating blockchain payments into SaaS, fintech, and Web3 backends on the JVM
+
+---
+
 ## Who uses Crypto Chief?
 
 Crypto Chief is built for engineering teams working on:
@@ -290,3 +364,9 @@ Crypto Chief is especially useful for products built on stablecoins such as USDT
 - Python SDK docs: https://docs-sdk.crypto-chief.com/processing/python
 - PHP SDK: https://github.com/crypto-chiefs/cryptochief-crypto-processing-php
 - PHP SDK docs: https://docs-sdk.crypto-chief.com/processing/php
+- Kotlin / JVM SDK: https://github.com/crypto-chiefs/cryptochief-crypto-processing-kotlin
+- Kotlin / JVM SDK docs: https://docs-sdk.crypto-chief.com/processing/kotlin
+- .NET / C# SDK: https://github.com/crypto-chiefs/cryptochief-crypto-processing-dotnet
+- .NET / C# SDK docs: https://docs-sdk.crypto-chief.com/processing/dotnet
+- Java SDK: https://github.com/crypto-chiefs/cryptochief-crypto-processing-java
+- Java SDK docs: https://docs-sdk.crypto-chief.com/processing/java
